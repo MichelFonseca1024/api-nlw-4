@@ -1,0 +1,22 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5433,
+    "username": "michelfonseca",
+    "password": "mfdev",
+    "database": "NLW04",
+    "synchronize": false,
+    "logging": false,
+    "migrations": [
+       "./src/database/migrations/**.ts"
+    ],
+    "cli":{
+        "migrationsDir": "./src/database/migrations"
+    },
+    "entities": [
+       "./src/models/*.ts"
+    ],
+    "subscribers": [
+       "src/subscriber/**/*.ts"
+    ]
+ }
